@@ -1,0 +1,18 @@
+spring:
+
+  application:
+    name: shopping-cart
+
+  spring:
+    config:
+      import: config-server
+
+  cloud:
+    config:
+      uri: http://localhost:8888 # optional
+
+#spring.application.name=service-one
+#spring.config.import=configserver:
+#spring.cloud.config.uri=http://localhost:8888
+#spring.cloud.config.username=configUser
+#spring.cloud.config.password=configPass
